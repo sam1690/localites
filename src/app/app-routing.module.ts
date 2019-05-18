@@ -7,15 +7,12 @@ const routes: Routes = [
     redirectTo: 'index',
     pathMatch: 'full'
   },
-  {
-    path: 'home',
-    loadChildren: './home/home.module#HomePageModule'
-  },
-  {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
-  },
-  { path: 'index', loadChildren: './pages/index/index.module#IndexPageModule' }
+  
+  { path: 'index', loadChildren: './pages/index/index.module#IndexPageModule' },
+  
+  { path: 'dashboard', loadChildren: './pages/dashboard/dashboard.module#DashboardPageModule' },
+  
+  
 ];
 
 @NgModule({

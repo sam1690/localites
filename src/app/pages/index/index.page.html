@@ -12,14 +12,15 @@
             </ion-col>
             <ion-col size="4" size-sm>
               <div class="ion-text-end header" (click)="registration()">
-                  <ion-icon name="person-add"></ion-icon>Sign Up
+                  <ion-title><ion-icon name="person-add"></ion-icon></ion-title>
+                  
                   
               </div>
             </ion-col>
             <ion-col size="3" size-sm>
-              <div class="ion-text-end header" (click)="login()">
-                  <ion-icon name="person"></ion-icon>Login
-              </div>
+              <div class="ion-text-center header" (click)="login()">
+                  <ion-title><ion-icon name="person"></ion-icon></ion-title>
+                 </div>
 
               </ion-col>
            
@@ -30,18 +31,125 @@
 </ion-header>
 
 <ion-content>
+    <ion-grid>
+        <ion-row>
+          <ion-col>
+              <div id="demo" class="carousel slide" data-ride="carousel">
+
+                  <!-- Indicators -->
+                  <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                  </ul>
+                
+                  <!-- The slideshow -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="/assets/images/2.jpg" alt="Los Angeles">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/assets/images/2.jpg" alt="Chicago">
+                    </div>
+                    
+                  </div>
+                
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                
+                </div>
+          </ion-col>
+          
+         
+        </ion-row>
+      </ion-grid>
   <div *ngFor= "let index of indexes">
       <ion-card>
           <ion-card-header>
-            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-            <ion-card-title>Card Title</ion-card-title>
+            <ion-card-subtitle>{{index.subtitle}}</ion-card-subtitle>
+            <ion-card-title>{{index.title}}</ion-card-title>
           </ion-card-header>
         
           <ion-card-content>
-            Keep close to Nature's heart... and break clear away, once in awhile,
-            and climb a mountain or spend a week in the woods. Wash your spirit clean.
+           {{index.desc}}
           </ion-card-content>
         </ion-card>
   </div>
+  <ion-grid>
+      <ion-row>
+          
+                <ion-col size="3">
+                  <div class="ion-text-center caption">
+                  About
+                  </div>
+                   
+                  </ion-col>
+                  <ion-col size="3">
+                      <div class="ion-text-center caption">
+    Contact
+                      </div>
+                       
+                      </ion-col>
+                      <ion-col size="3">
+                          <div class="ion-text-center caption">
+        Privacy
+                          </div>
+                           
+                          </ion-col>
+                          <ion-col size="3">
+                              <div class="ion-text-center caption">
+            Copyrights
+                              </div>
+                               
+                              </ion-col>
+        
+       
+      </ion-row>
+    </ion-grid>
+
 
 </ion-content>
+<ion-footer>
+  
+    
+        <ion-grid>
+            <ion-row>
+                <ion-col size="3">
+                    <ion-tab-button tab="">
+                        <ion-icon name="globe"></ion-icon>
+                                    <ion-label>News</ion-label>
+                    </ion-tab-button>
+                
+                  </ion-col>
+                  <ion-col size="3">
+                      <ion-tab-button tab="">
+                          <ion-icon name="wallet"></ion-icon>
+                                      <ion-label>Merchant</ion-label>
+                      </ion-tab-button>
+                  
+                    </ion-col>
+                    <ion-col size="3" >
+                        <ion-tab-button tab="">
+                            <ion-icon name="contact"></ion-icon>
+                                        <ion-label>Localites</ion-label>
+                        </ion-tab-button>
+                    
+                      </ion-col>
+                      <ion-col size="3">
+                          <ion-tab-button tab="">
+                              <ion-icon name="rocket"></ion-icon>
+                                          <ion-label>Explore</ion-label>
+                          </ion-tab-button>
+                      
+                        </ion-col>
+              
+             
+            </ion-row>
+          </ion-grid>
+    
+    </ion-footer>
