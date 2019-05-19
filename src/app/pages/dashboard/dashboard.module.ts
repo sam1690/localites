@@ -14,9 +14,27 @@ const routes: Routes = [
     component: DashboardPage,
     children:[
       {
-        path: 'profile', loadChildren: '../profile/profile.module#ProfilePageModule'     
+        path: 'profile', 
+        loadChildren: '../profile/profile.module#ProfilePageModule'     
       },
-      { path: 'news', loadChildren: '../news/news.module#NewsPageModule' },
+
+      { path: 'news', 
+        loadChildren: '../news/news.module#NewsPageModule' 
+      },
+      
+      { path: 'user-news', 
+        loadChildren: '../user-news/user-news.module#UserNewsPageModule' 
+      },
+    
+      { path: 'user-explore', 
+        loadChildren: '../user-explore/user-explore.module#UserExplorePageModule' 
+      },
+  
+      { path: 'user-merchant', 
+        loadChildren: '../user-merchant/user-merchant.module#UserMerchantPageModule' 
+      },
+      
+      
       {
         path:'',
         redirectTo:'/dashboard/profile',

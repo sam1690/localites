@@ -14,8 +14,18 @@ export class DashboardPage implements OnInit {
     },
     {
       title: 'News',
-      url: 'news',
-      icon: 'list'
+      url: 'user-news',
+      icon: 'globe'
+    },
+    {
+      title: 'Explore Burari',
+      url: 'user-explore',
+      icon: 'rocket'
+    },
+    {
+      title: 'Merchant',
+      url: 'user-merchant',
+      icon: 'wallet'
     }
   ];
   constructor() { }

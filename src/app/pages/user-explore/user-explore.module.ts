@@ -5,13 +5,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ProfilePage } from './profile.page';
-import {PopoverComponent} from '../../components/popover/popover.component'
+import { UserExplorePage } from './user-explore.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: ProfilePage
+    component: UserExplorePage
   }
 ];
 
@@ -22,7 +21,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  entryComponents: [PopoverComponent],
-  declarations: [ProfilePage,PopoverComponent]
+  declarations: [UserExplorePage]
 })
-export class ProfilePageModule {}
+export class UserExplorePageModule {}

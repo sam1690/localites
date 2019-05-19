@@ -1,0 +1,97 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+            
+        <ion-grid>
+            <ion-row>
+              <ion-col size="4" size-sm>
+                  
+                    
+              </ion-col>
+              <ion-col size="2" size-sm>
+                <div class="ion-text-end name">
+                    
+                    
+                    
+                </div>
+              </ion-col>
+              <ion-col size="2" size-sm>
+                <div class="ion-text-center">
+                    <ion-button class="btn" fill="clear"><ion-icon name="contact"></ion-icon></ion-button>
+                   </div>
+  
+                </ion-col>
+  
+                <ion-col size="2" size-sm>
+                    <div class="ion-text-start">
+                        <ion-button class="btn" fill="clear" (click)="popover($event)"><ion-icon name="arrow-dropdown"></ion-icon></ion-button>
+                       </div>
+      
+                    </ion-col>
+                    <ion-col size="1" size-sm>
+                        <div class="ion-text-center">
+                           
+                           </div>
+          
+                        </ion-col>
+             
+            </ion-row>
+          </ion-grid>
+        
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+      <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Post your ads ! Get your business known to localites !</ion-card-subtitle>
+            <ion-card-title>Get Resistered as Merchant account </ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+              Open a merchant account ! Post your ads and get your business more reachable amongs localites
+          </ion-card-content>
+        </ion-card>
+  </ion-content>
+
+  <ion-footer>
+  
+    
+      <ion-grid>
+          <ion-row>
+              <ion-col size="3">
+                  <ion-tab-button tab="">
+                      <ion-icon name="globe"></ion-icon>
+                                  <ion-label>News</ion-label>
+                  </ion-tab-button>
+              
+                </ion-col>
+                <ion-col size="3">
+                    <ion-tab-button tab="">
+                        <ion-icon name="wallet"></ion-icon>
+                                    <ion-label>Merchant</ion-label>
+                    </ion-tab-button>
+                
+                  </ion-col>
+                  <ion-col size="3" >
+                      <ion-tab-button tab="">
+                          <ion-icon name="contact"></ion-icon>
+                                      <ion-label>Localites</ion-label>
+                      </ion-tab-button>
+                  
+                    </ion-col>
+                    <ion-col size="3">
+                        <ion-tab-button tab="">
+                            <ion-icon name="rocket"></ion-icon>
+                                        <ion-label>Explore</ion-label>
+                        </ion-tab-button>
+                    
+                      </ion-col>
+            
+           
+          </ion-row>
+        </ion-grid>
+  
+  </ion-footer>

@@ -2,13 +2,156 @@
   <ion-toolbar>
       <ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
-        </ion-buttons>
-        <div class="header">
-            <ion-title>Profile</ion-title>
-        </div>
+  </ion-buttons>
+          
+      <ion-grid>
+          <ion-row>
+            <ion-col size="4" size-sm>
+                
+                  
+            </ion-col>
+            <ion-col size="2" size-sm>
+              <div class="ion-text-end name">
+                  
+                  
+                  
+              </div>
+            </ion-col>
+            <ion-col size="2" size-sm>
+              <div class="ion-text-center">
+                  <ion-button class="btn" fill="clear"><ion-icon name="contact"></ion-icon></ion-button>
+                 </div>
+
+              </ion-col>
+
+              <ion-col size="2" size-sm>
+                  <div class="ion-text-start">
+                      <ion-button class="btn" fill="clear" (click)="popover($event)"><ion-icon name="arrow-dropdown"></ion-icon></ion-button>
+                     </div>
+    
+                  </ion-col>
+                  <ion-col size="1" size-sm>
+                      <div class="ion-text-center">
+                         
+                         </div>
+        
+                      </ion-col>
+           
+          </ion-row>
+        </ion-grid>
+      
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+    <ion-grid>
+        <ion-row>
+          <ion-col>
+              <div id="demo" class="carousel slide" data-ride="carousel">
 
+                  <!-- Indicators -->
+                  <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                  </ul>
+                
+                  <!-- The slideshow -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="/assets/images/2.jpg" alt="Los Angeles">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/assets/images/2.jpg" alt="Chicago">
+                    </div>
+                    
+                  </div>
+                
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                
+                </div>
+          </ion-col>
+          
+         
+        </ion-row>
+      </ion-grid>
+    <ion-list>
+       
+          <ion-item >
+              <ion-icon name="add-circle-outline"></ion-icon>
+            <ion-label>
+            Photo
+            </ion-label>
+          </ion-item>
+          <ion-item >
+              <ion-icon name="add-circle-outline"></ion-icon>
+            <ion-label>
+              Video
+            </ion-label>
+          </ion-item>
+          <ion-item >
+              <ion-icon name="add-circle-outline"></ion-icon>
+            <ion-label>
+              Stories
+            </ion-label>
+          </ion-item>
+          <ion-item >
+              <ion-icon name="add-circle-outline"></ion-icon>
+            <ion-label>
+             Status
+            </ion-label>
+          </ion-item>
+          <ion-item >
+              <ion-icon name="add-circle-outline"></ion-icon>
+            <ion-label>
+              Comments
+            </ion-label>
+          </ion-item>
+        
+      </ion-list>
 </ion-content>
+<ion-footer>
+  
+    
+    <ion-grid>
+        <ion-row>
+            <ion-col size="3">
+                <ion-tab-button tab="">
+                    <ion-icon name="globe"></ion-icon>
+                                <ion-label>News</ion-label>
+                </ion-tab-button>
+            
+              </ion-col>
+              <ion-col size="3">
+                  <ion-tab-button tab="">
+                      <ion-icon name="wallet"></ion-icon>
+                                  <ion-label>Merchant</ion-label>
+                  </ion-tab-button>
+              
+                </ion-col>
+                <ion-col size="3" >
+                    <ion-tab-button tab="">
+                        <ion-icon name="contact"></ion-icon>
+                                    <ion-label>Localites</ion-label>
+                    </ion-tab-button>
+                
+                  </ion-col>
+                  <ion-col size="3">
+                      <ion-tab-button tab="">
+                          <ion-icon name="rocket"></ion-icon>
+                                      <ion-label>Explore</ion-label>
+                      </ion-tab-button>
+                  
+                    </ion-col>
+          
+         
+        </ion-row>
+      </ion-grid>
+
+</ion-footer>

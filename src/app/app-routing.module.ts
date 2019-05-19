@@ -11,6 +11,9 @@ const routes: Routes = [
   { path: 'index', loadChildren: './pages/index/index.module#IndexPageModule' },
   
   { path: 'dashboard', loadChildren: './pages/dashboard/dashboard.module#DashboardPageModule' },
+  { path: 'user-news', loadChildren: './pages/user-news/user-news.module#UserNewsPageModule' },
+  { path: 'user-explore', loadChildren: './pages/user-explore/user-explore.module#UserExplorePageModule' },
+  { path: 'user-merchant', loadChildren: './pages/user-merchant/user-merchant.module#UserMerchantPageModule' },
   
   
 ];
